@@ -67,3 +67,10 @@
 input[type="checkbox"]:checked + span{
     opacity: .3;
 }
+
+input[type="checkbox"]:checked + span small{
+    opacity: .9;
+}
+
+
+
