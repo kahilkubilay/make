@@ -1,0 +1,16 @@
+{
+  "name": "nuron-website-demo",
+  "version": "0.0.1",
+  "description": "nuron example website",
+  "main": "info.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nuron",
+    "website",
+    "demo"
+  ],
+  "author": "kk",
+  "license": "ISC"
+}
