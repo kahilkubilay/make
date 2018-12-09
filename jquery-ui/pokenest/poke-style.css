@@ -1,0 +1,183 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*container style*/
+
+/*container*/
+
+#container{
+    width: 75%;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+
+/*container*/
+
+/*pokeball style*/
+
+.draggable{
+    z-index: 1;
+}
+
+#pokeball{
+    width: 20%;
+    height: 100px;
+    position: relative;
+    top: 30%;
+    left: 15%;
+}
+
+    #pokeball ul{
+
+    }
+
+        #pokeball ul li{
+            float: left;
+            margin-left: 10px;
+            border: 0;
+        }
+
+            #pokeball ul li img{
+
+            }
+
+
+/*pokeball style*/
+
+/*pokemon style*/
+
+#pokemon{
+    width: 150px;
+    float: right;
+    position: relative;
+    top: 0.1em;
+    right: 25%;
+    border: 1px solid grey;
+    border: 0;
+}
+
+    #pokemon img{
+        width: 150px;
+    }
+
+
+
+/*pokemon style*/
+
+/*catch style*/
+
+#catch{
+    width: 100%;
+    position: relative;
+    top: 45%;
+    left: 3%;
+    text-align: center;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    text-decoration: underline;
+    margin-bottom: 1.5em;
+}
+
+    #catch ul{
+        
+    }
+
+        #catch ul li{
+            float: left;
+            margin-left: 10px;
+        }
+
+            #catch ul li img{
+                width: 100px;
+            }
+
+/*catch style*/
+
+/*counter*/
+
+#pokemonCounter{
+    position: relative;
+    width: 68%;
+    top: 35%;
+}
+
+    #pokemonCounter span{
+        font-size: 150%;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        right: 0;
+        padding: 5px 10px;
+        background-color: orange;
+        border-radius: 50px;
+
+    }
+
+
+/*counter*/
+
+/*message*/
+
+#message{
+    float: left;
+    position: relative;
+    top: -8%;
+    left: 70%;
+    display: none;
+}
+
+    #message img{
+        width: 100px;
+    }
+
+/*message*/
