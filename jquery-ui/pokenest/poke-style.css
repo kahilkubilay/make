@@ -127,7 +127,6 @@ h3{
     font-size: 150%;
     text-decoration: underline;
     margin-bottom: 1.5em;
-    text-align: center;
 }
 
     #catch ul{
@@ -170,10 +169,9 @@ h3{
 /*message*/
 
 #message{
-    float: left;
-    position: relative;
-    top: -8%;
-    left: 70%;
+    position: absolute;
+    top: -11%;
+    right: 27%;
     display: none;
 }
 
