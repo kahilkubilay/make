@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Create Simple Container</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-ui/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.5.0/balloon.min.css">
+
+
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container" class="container">
+
+        <header>
+            <h3>Create Simple Container</h3>
+        </header>
+
+        <div class="clear"></div>
+
+        <div id="main-form">
+
+            <div id="pCont" class="">
+                <p>Width: </p>
+                <p>Height: </p>
+                <p>Background Color: </p>
+                <p>Border: </p>
+            </div>
+
+            <div class="clear"></div>
+
+            <div id="inpCont">
+
+                <input id="widthVal" class="" type="text" placeholder="e.g: 100">
+                <input id="heightVal" class="" type="text" placeholder="e.g: 100">
+                <input id="backgroundVal" class="" type="text" placeholder="e.g: red">
+
+                <div id="borderCont">
+                    <input id="borderWeightVal" class="" type="text" placeholder="e.g: 1">
+                    <select name="borderType" id="borderType">
+                        <option value="solid" id="">Solid</option>
+                        <option value="dotted" id="">Dotted</option>
+                        <option value="dashed" id="">Dashed</option>
+                        <option value="double" id="">Double</option>
+                    </select>
+                    <input id="borderColorVal" class="" type="text" placeholder="e.g: brown">
+                </div>
+
+
+
+            </div>
+            <button id="create">Create</button>
+
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="createCont" class="createCont">
+
+        </div>
+
+        <div id="stylesheet">
+            <p>.createCont {</p>
+            <p>
+                width: <span></span>
+            </p>
+            <p>
+                height: <span></span>
+            </p>
+            <p>
+                background-color: <span></span>
+            </p>
+            <p>
+                border: <span></span>
+            </p>
+            <p>}</p>
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="copy" data-balloon="Click To Copy" data-balloon-pos="right">
+            <img src="img/copy.png" alt="">
+        </div>
+
+    </div>
+
+</body>
+</html>
