@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ne10 Art Film Medya | Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="reklam ajansı, medya, planlama">
+
+    <link rel="shortcut icon" href="img/neon-logo.png" type="image/x-icon" /> 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  
+    <style>
+    
+    .mySlides{
+                    display:none;
+                }
+                .w3-left, .w3-right, .w3-badge{
+                    cursor:pointer;
+                }
+                .w3-badge{
+                    height:13px;
+                    width:13px;
+                    padding:0;
+                }
+
+    </style>
+   
+    <script src="js/script.js"></script>
+    
+</head>
+<body>
+
+    <div id="container" class="container">
+    <!--all content-->
+        
+        <div id="main-box" class="main-box">
+        <!--main content-->        
+            
+            <div class="header">
+            <!--header-->
+                <img src="img/neon-logo.png" alt="neon-medya-logo" title="neon medya logosu">
+            </div>
+            
+            <div class="links">
+            <!--links on the  site-->
+                <ul>
+                    <li><a href="#">Anasayfa</a></li>
+                    <li><a href="#calismalar">Çalışmalar</a></li>
+                    <li><a href="#sponsorlar">Sponsorlar</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                </ul>
+
+            </div>
+
+            <div id="calismalar" class="jobs">
+            <!--make jobs-->
+                <!--w3schools slider-->
+                <div class="w3-container">
+                    <h2>Çalışmalarımız</h2>
+                </div>
+                <div class="w3-content w3-display-container">
+                    <img class="mySlides" src="img/demo-resim-1.jpg">
+                    <div class="content-info">
+                        <h2>Lorem Ipsum Nedir ? </h2>
+                        <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir.
+                           Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı
+                           oluşturmak üzere bir yazı galerisini..
+                        </p>
+                    </div>
+                    <img class="mySlides" src="img/demo-resim-2.jpg">
+                    <div class="content-info">
+                            <h2>Nereden Gelir?</h2>
+                            <p>Yaygın inancın tersine, Lorem Ipsum rastgele sözcüklerden oluşmaz.
+                                Kökleri M.Ö. 45 tarihinden bu yana klasik Latin edebiyatına kadar
+                                uzanan 2000 yıllık bir geçmişi vardır...
+                            </p>
+                        </div>
+                    
+                    <img class="mySlides" src="img/demo-resim-3.jpg">
+                    <div class="content-info">
+                        <h2>Neden Kullanırız ? </h2>
+                        <p>Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen
+                            bir gerçektir. Lorem Ipsum kullanmanın amacı, sürekli 'buraya metin
+                            gelecek, buraya metin gelecek'..
+                        </p>
+                    </div>
+                   
+                    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                        <!--w3schools buttons-->
+                        <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+                        <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(1)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sponsorlar" class="sponsor">
+            <!--all sponsors-->
+                <h2>Sponsorlarımız</h2>
+                <ul class="sponsors">
+                    <li><a href="#">
+                        <img src="img/osmangazi-üniversitesi.png" alt="osmangazi üniversitesi destekçimiz oldu"
+                         title="osmangazi üniversitesi destekçimiz oldu.">
+                    </a></li>
+                    <li><a href="#" >
+                        <img src="img/ps-logo.png" alt="Sony firması destekçimiz oldu"
+                        title="Sony firması destekçimiz oldu.">
+                    </a></li>
+                    <li><a href="#" >
+                        <img src="img/pepsi-logo.jpg" alt="Pepsi firması destekçimiz oldu"
+                        title="Pepsi firması destekçimiz oldu.">
+                    </a></li>
+                     <li><a href="#" >
+                        <img src="img/eskisehir-belediyes.png" alt="eskişehir belediyesi destekçimiz oldu"
+                        title="eskişehir belediyesi destekçimiz oldu.">
+                    </a></li>
+                </ul>
+            </div>
+
+            <div id="iletisim" class="contact">
+                <!--content-->
+
+               <h2>İletişim</h2>
+
+               <form action="#">
+                <label for="fname">Adınız: </label><br>
+                <input type="text" id="fname" name="firstname" placeholder="Adınız..">
+                <br>
+                <label for="lname">Soyadınız: </label><br>
+                <input type="text" id="lname" name="lastname" placeholder="Soyadınız.."><br>
+            
+                <label for="country">Yaşadığınız Şehir: </label><br>
+                <select id="country" name="country">
+                    <option value="0">------</option>
+                    <option value="1">Adana</option>
+                    <option value="2">Adıyaman</option>
+                    <option value="3">Afyonkarahisar</option>
+                    <option value="4">Ağrı</option>
+                    <option value="5">Amasya</option>
+                    <option value="6">Ankara</option>
+                    <option value="7">Antalya</option>
+                    <option value="8">Artvin</option>
+                    <option value="9">Aydın</option>
+                    <option value="10">Balıkesir</option>
+                    <option value="11">Bilecik</option>
+                    <option value="12">Bingöl</option>
+                    <option value="13">Bitlis</option>
+                    <option value="14">Bolu</option>
+                    <option value="15">Burdur</option>
+                    <option value="16">Bursa</option>
+                    <option value="17">Çanakkale</option>
+                    <option value="18">Çankırı</option>
+                    <option value="19">Çorum</option>
+                    <option value="20">Denizli</option>
+                    <option value="21">Diyarbakır</option>
+                    <option value="22">Edirne</option>
+                    <option value="23">Elazığ</option>
+                    <option value="24">Erzincan</option>
+                    <option value="25">Erzurum</option>
+                    <option value="26">Eskişehir</option>
+                    <option value="27">Gaziantep</option>
+                    <option value="28">Giresun</option>
+                    <option value="29">Gümüşhane</option>
+                    <option value="30">Hakkâri</option>
+                    <option value="31">Hatay</option>
+                    <option value="32">Isparta</option>
+                    <option value="33">Mersin</option>
+                    <option value="34">İstanbul</option>
+                    <option value="35">İzmir</option>
+                    <option value="36">Kars</option>
+                    <option value="37">Kastamonu</option>
+                    <option value="38">Kayseri</option>
+                    <option value="39">Kırklareli</option>
+                    <option value="40">Kırşehir</option>
+                    <option value="41">Kocaeli</option>
+                    <option value="42">Konya</option>
+                    <option value="43">Kütahya</option>
+                    <option value="44">Malatya</option>
+                    <option value="45">Manisa</option>
+                    <option value="46">Kahramanmaraş</option>
+                    <option value="47">Mardin</option>
+                    <option value="48">Muğla</option>
+                    <option value="49">Muş</option>
+                    <option value="50">Nevşehir</option>
+                    <option value="51">Niğde</option>
+                    <option value="52">Ordu</option>
+                    <option value="53">Rize</option>
+                    <option value="54">Sakarya</option>
+                    <option value="55">Samsun</option>
+                    <option value="56">Siirt</option>
+                    <option value="57">Sinop</option>
+                    <option value="58">Sivas</option>
+                    <option value="59">Tekirdağ</option>
+                    <option value="60">Tokat</option>
+                    <option value="61">Trabzon</option>
+                    <option value="62">Tunceli</option>
+                    <option value="63">Şanlıurfa</option>
+                    <option value="64">Uşak</option>
+                    <option value="65">Van</option>
+                    <option value="66">Yozgat</option>
+                    <option value="67">Zonguldak</option>
+                    <option value="68">Aksaray</option>
+                    <option value="69">Bayburt</option>
+                    <option value="70">Karaman</option>
+                    <option value="71">Kırıkkale</option>
+                    <option value="72">Batman</option>
+                    <option value="73">Şırnak</option>
+                    <option value="74">Bartın</option>
+                    <option value="75">Ardahan</option>
+                    <option value="76">Iğdır</option>
+                    <option value="77">Yalova</option>
+                    <option value="78">Karabük</option>
+                    <option value="79">Kilis</option>
+                    <option value="80">Osmaniye</option>
+                    <option value="81">Düzce</option>
+                </select>
+                <br>
+                <label for="subject">Mesajınız: </label><br>
+                <textarea id="subject" name="subject" placeholder="Bize ulaşma sebebiniz.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Gönder"  onclick="mesaj();">
+              </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function mesaj(){
+            alert("mesajınız tarafımıza ulaşmıştır.");
+        }
+            
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var info = document.getElementsByClassName("content-info");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            for(i=0 ; i<info.length ; i++){
+                info[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " w3-white";
+            info[slideIndex-1].style.display = "block";
+        }
+            
+    </script>
+    
+</body>
+</html>

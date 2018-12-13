@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pokènest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-ui/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="poke-style.css">
+
+    <style>
+        .classic {
+            animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            perspective: 1000px;
+        }
+
+
+        @keyframes shake {
+
+            10%,
+            90% {
+                transform: translate3d(-1px, 0px, 0px);
+            }
+
+            20%,
+            80% {
+                transform: translate3d(1px, 0px, 0px);
+            }
+
+            30%,
+            50%,
+            70% {
+                transform: translate3d(-4px, 0px, 0px);
+            }
+
+            40%,
+            60% {
+                transform: translate3d(4px, 0px, 0px);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container" class="container">
+
+        <div id="pokeball" class="pokeball">
+
+            <ul>
+                <li id="" class="draggable ui-widget-content">
+                    <img src="img/pokeball/classic-pokeball.png" alt="pokeball">
+                </li>
+                <li id="" class="draggable">
+                    <img src="img/pokeball/blue-pokeball.png" alt="blue pokeball">
+                </li>
+                <li id="" class="draggable">
+                    <img src="img/pokeball/purple-pokeball.png" alt="purple pokeball">
+                </li>
+                <li id="deneeme" class="draggable">
+                    <img src="img/pokeball/skyblue-pokeball.png" alt="skyblue pokeball">
+                </li>
+            </ul>
+
+        </div>
+
+        <div id="message" class="message">
+            <img src="img/fckoff.png" alt="">
+        </div>
+
+        <div id="pokemon" class="droppable ui-droppable">
+
+        </div>
+
+        <div id="pokemonCounter">
+            <span></span>
+        </div>
+
+        <div id="catch" class="catch">
+            <h3>Gotta Catch 'Em All</h3>
+            <ul>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+        var randomImagesArr = ['img1.png', 'img2.png', 'img3.png', 'img4.png', 'img5.png',
+            'img6.png', 'img7.png', 'img8.png', 'img9.png', 'img10.png'
+        ];
+
+        var cathemPokemon = [];
+
+        function getRandomImage(imgAr, path) {
+            path = path || 'img/pokemon/';
+            var num = Math.floor(Math.random() * imgAr.length);
+            var img = imgAr[num];
+            var imgStr = '<img src="' + path + img + '" alt="">';
+            document.getElementById('pokemon').innerHTML = imgStr;
+
+        }
+
+        getRandomImage(randomImagesArr);
+
+        $('#pokemonCounter span').append(randomImagesArr.length);
+
+        $('.draggable').draggable({
+            cursor: 'move',
+            addClasses: false,
+        });
+
+        $('.draggable').mouseup(function () {
+
+            var leftMove = Math.floor(Math.random() * 100);
+            var rightMove = Math.floor(Math.random() * 100);
+
+            $(this).animate({
+                left: leftMove,
+                right: rightMove,
+            }, '1000');
+
+            $('.droppable').droppable({
+                drop: function (event, ui) {
+                    
+                    var change = Math.floor(Math.random() * 15 + 1);
+
+                    var cathPokemonPath = $('#pokemon img').attr('src');
+
+                    cathPokemonPath = cathPokemonPath.substr(12);
+                    var cathPokemonIndex;
+
+                    
+                    var i = 0;
+
+                    if (change % 5 == 0) {
+
+                        var domPath = $(this).html();
+                        
+                        for (i in randomImagesArr) {
+                            if (randomImagesArr[i] == cathPokemonPath) {
+                                randomImagesArr.splice(i, 1);
+                            }
+                        }
+
+                        $(this).change(getRandomImage(randomImagesArr));
+                        
+                        $('#pokemonCounter span').remove();
+                        $('#pokemonCounter').append('<span>' + randomImagesArr.length + '</span>');
+                       
+                        $('#catch ul').append('<li>' + domPath + '</li>');
+
+                    } else {
+
+                        $(this).addClass('classic');
+                        console.log(change);
+                        if(change == 9 || change == 3 || change == 1){
+                            $('#message').css({ 'display' : 'block' });
+                        }
+                        
+
+                    }
+
+                }
+            });
+
+            $('#pokemon').removeClass('classic');
+            $('#message').css({ 'display' : 'none' });
+        });
+    </script>
+
+</body>
+
+</html>

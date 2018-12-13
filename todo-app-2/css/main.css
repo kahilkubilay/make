@@ -1,0 +1,76 @@
+*{
+    font-family: "Niramit", sans-serif;
+}
+
+/*add item*/
+.addItem{
+    background: none;
+    display: inline;
+    position: relative;
+    left: 2%;
+
+}
+
+    .addItem input{
+        width: 250px;
+        height: 25px;
+    }
+
+    .addItem span{
+        margin-left: 2%;
+        font-size: 150%;
+        background: orangered;
+        color: white;
+        font-weight: 900;
+        padding: 10px 20px;
+        border-radius: 100px;
+        cursor: pointer;
+        border: 1px solid black;
+        
+    }
+        .addItem span:hover{
+            box-shadow: 0 0 10px tomato;
+        }
+
+/*yeni görevler*/
+.görevler{
+    background-color: none;
+    display: block;
+    width: 30%;
+    padding: 0.2%;
+    margin-top: 3%;
+    margin-left: 2%;
+}
+
+    .görevler ul{
+
+    }
+
+        .görevler ul li{
+            list-style: none;
+            width: 100%;
+            margin: 4% 0;
+            font-size: 115%;
+
+        }
+        ul li:nth-child(2n){
+            background: #dce0e8;
+
+        }
+
+        .görevler small{
+            background: tomato;
+            float: right;
+        }
+
+/*tamamlanan görevler*/
+input[type="checkbox"]:checked + span{
+    opacity: .3;
+}
+
+input[type="checkbox"]:checked + span small{
+    opacity: .9;
+}
+
+
+

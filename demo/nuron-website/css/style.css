@@ -1,0 +1,335 @@
+/*nuron demo still file*/
+
+/*css-reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+    border-spacing: 0;  
+}
+
+/*css-reset*/
+
+/*container*/
+
+#container{
+    width: 100%;
+    height: 325vh;
+    background: #3E5151;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
+/*container*/
+
+/*main-box*/
+
+    #main-box{
+        width: 60%;
+        height: 275vh;
+        background: white;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-top: 7.5%;
+        padding: 1.5%;
+    }
+
+
+/*main-box*/
+
+
+/*header*/
+        .header{
+            width: 100%;
+            height: auto;
+            display: inline-block;
+            text-align: center;
+        }
+
+            .header img{
+                width: 25%;
+            
+            }
+
+
+
+/*header*/
+
+/*links*/
+        .links{
+            width: 100%;
+            margin-top: 7.5%;
+        }
+
+            .links ul{
+                width: 100%;
+                text-align: center;   
+            }
+
+                .links ul li{
+                    display: inline;
+                    width: 10px;
+                    margin: 1%; 
+                    padding: 1%;
+                }
+
+                    .links ul li a{
+                        border-radius: 7px;
+                        font-size: 130%;
+                        text-decoration: none;
+                        color: #052b49;
+                        padding: 1% 2%;
+                        transition: 1s background;
+                    }
+
+                    .links ul li a:hover{
+                        background-color: #eb3b38;
+
+                        transition-delay: 0.1s;
+                    }
+
+
+/*links*/
+
+/*make jobs*/
+
+        .jobs{
+            width: 100%;
+            height: auto;
+            margin-top: 15%;
+        }
+
+            .jobs .w3-container{
+                
+            }
+
+                .jobs .w3-container h2{
+                    font-size: 150%;
+                    position: relative;
+                    top: -50px;
+                    text-align: center;
+                    color: #052b49;
+                }
+
+            .jobs .w3-content{
+                clear: both;
+                display: block;
+                width: 100%;
+                height: 50vh;
+            }
+
+                .jobs .w3-content .mySlides{
+                    width: 80%;
+                    height: 300px;
+                    margin: auto auto;
+                }
+
+                    .jobs .w3-left, .jobs .w3-right{
+                        position: relative;
+                        top: -2vh;
+                        font-size: 100%;
+                        font-weight: bold;
+                        color: #052b49;
+                        padding: 15px;
+                        border-radius: 4px;
+                        padding: 120px 10px;
+
+                    }
+
+                   
+
+                    .jobs .w3-badge{
+                        position: relative;
+                        top: 245px;
+ 
+                    }
+
+                    .jobs .w3-white, .w3-hover-white:hover{
+                        background-color: #fff!important;
+                    }
+
+                    .jobs .w3-border{
+                        border: 1px solid #fff!important;
+                    }
+
+                        .jobs .w3-content .content-info{
+                            display: block;
+                            width: 70%;
+                            height: 20vh;
+                            margin: auto auto;
+                            text-align: center;
+                            background: #f7d3ba;
+                            position: relative;
+                            padding: 10px;                            
+
+                        }
+
+                            .jobs .w3-content .content-info h2{
+                                color: #052b49;
+                                font-size: 135%;
+                                padding: 10px;
+                                
+                            }
+
+                            .jobs .w3-content .content-info p{
+                                color: #052b49;
+                                line-height: 1.3;
+                                text-align: left;
+                            }
+
+                    
+                
+
+
+/*make jobs*/
+
+/*sponsorlar*/
+        
+      .sponsor{
+        width: 100%;
+        height: auto;
+        background-color: none;
+        position: relative;
+        top: 13%;
+      }
+      
+        .sponsor h2{
+            font-size: 150%;
+            position: relative;
+            top: -60px;
+            text-align: center;
+            color: #052b49;
+        }
+      
+        .sponsor ul{
+            text-align: center;
+        }
+
+            .sponsor ul li{
+                display: inline;
+                margin-left: 30px;
+            }
+
+                .sponsor ul li a{
+                    text-decoration: none;
+                }
+
+                    .sponsor ul li a img{
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50px;
+                        -webkit-filter: grayscale(100%);
+                        filter: grayscale(100%);
+                    }
+
+                    .sponsor ul li a img:hover{
+                        -webkit-filter: grayscale(0);
+                        filter: grayscale(0);
+                    }
+
+
+
+/*sponsorlar*/
+
+/*contact info*/
+
+        .contact{
+            position: relative;
+            top: 15%;
+            text-align: left;
+        }
+
+
+            .contact h2{
+                font-size: 150%;
+                position: relative;
+                top: 20px;
+                text-align: center;
+                color: #052b49;
+            }
+
+            .contact form{
+                position: relative;
+                top: 50px;
+            }
+
+            input[type=text], select, textarea {
+                width: 25%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+
+            textarea{
+                width: 100%;
+            }
+            
+            input[type=submit] {
+                background-color: #052b49;
+                color: #fff;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                margin-left: 40%;
+                margin-top: 15px;
+                font-size: 125%;
+            }
+            
+            input[type=submit]:hover {
+                background-color: #eb3b38;
+            }
+            
+            
+
+                
+
+/*contact info*/
